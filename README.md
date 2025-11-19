@@ -24,7 +24,7 @@ Average cost basis chart
 
 Prints ROI, BTC accumulated, and final portfolio value for both strategies
 
-````
+```
 BASE_USD = 10.0
 DCA_FREQUENCY = "daily"      # "daily", "weekly", "monthly"
 NORMALIZE_WEIGHTS = True
