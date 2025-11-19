@@ -30,7 +30,7 @@ WEIGHT_MAP = {
     "extreme_greed": 0.75,
 }
 
-CMC_API_KEY = "163c8f6f3b81405fa0308d4834fe9ebc"
+CMC_API_KEY = "ADD_YOUR_CMC_API_KEY"
 
 # -----------------------------
 # 2. GET FEAR & GREED FROM CMC
@@ -326,5 +326,6 @@ if __name__ == "__main__":
     print("Value per $1 invested:")
     print(f"  Flat DCA:     {flat_mult:.3f}x")
     print(f"  Weighted DCA: {w_mult:.3f}x")
+
 
     plot_equity_curves(backtest_df)
