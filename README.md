@@ -2,7 +2,7 @@
 
 This project backtests a Bitcoin DCA strategy that adjusts position size based on the Crypto Fear & Greed Index. It compares a standard flat DCA to a weighted DCA approach where you invest more during fear and less during greed.
 
-🔍 Features
+## 🔍 Features
 
 Uses CoinMarketCap Fear & Greed Index (historical API with pagination)
 
@@ -24,12 +24,15 @@ Average cost basis chart
 
 Prints ROI, BTC accumulated, and final portfolio value for both strategies
 
+## ⚙️ Configuration
+
+In FGDCA.py you can modify:
 ```
 BASE_USD = 10.0
 DCA_FREQUENCY = "daily"      # "daily", "weekly", "monthly"
 NORMALIZE_WEIGHTS = True
 ```
-
+Fear & Greed weights:
 ```
 WEIGHT_MAP = {
     "extreme_fear": 2.0,
@@ -38,4 +41,8 @@ WEIGHT_MAP = {
     "greed": 0.75,
     "extreme_greed": 0.5,
 }
+```
+Set your CMC API key:
+```
+export CMC_API_KEY="YOUR_KEY_HERE"
 ```
